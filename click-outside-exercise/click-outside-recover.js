@@ -31,10 +31,13 @@ const handleClick = event => {
     modalOuter.classList.add('modal-outer-open');
 };
 
+//Event listener that pops the inner contents out
 cardButtons.forEach(button => {
     button.addEventListener('click', handleClick);
 });
 
+
+//Close the inner page
 const closeModal = () => modalOuter.classList.remove('modal-outer-open');
 
 modalOuter.addEventListener('click', function (event) {
