@@ -33,7 +33,7 @@ select.addEventListener('change', event => {
     const value = event.target.value;
     
     console.log(value);
-    if (value >= 1) {
+    if (value != '') {
         btn.disabled = false;
     };
 });
