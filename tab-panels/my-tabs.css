@@ -1,0 +1,42 @@
+body {
+    background-color: #D3DEDC;
+}
+
+.tabs {
+    display: grid;
+}  
+
+  [role="tablist"] {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+  }
+  
+  [role="tabpanel"] {
+    background: #7C99AC;
+    padding: 2rem;
+    color: #FFEFEF;
+  }
+
+  
+  button {
+    background-color: #FFEFEF ;
+    min-height: 5vh;
+    font-size: 1rem;
+    border: 0;
+    color: black;
+    border-radius: 5px 5px 0 0;
+    cursor:pointer;
+  }
+  
+  button[aria-selected="true"] {
+    background: #7C99AC;
+    box-shadow: none;
+    color: #FFEFEF;
+  }
+  
+  img {
+      max-width: 100%;
+      min-width: 60%;
+      border-radius: 5px;
+  }
