@@ -30,10 +30,13 @@ check.onchange = function () {
 
 //Make visible and enable the Submit button by choosing an option
 select.addEventListener('change', event => {
-    const value = event.target.value;
+    const submit = event.target.value;
     
-    console.log(value);
-    if (value != '') {
+    if (submit != '') {
         btn.disabled = false;
+        console.log(submit);
     };
+
 });
+
+
