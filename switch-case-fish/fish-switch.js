@@ -38,8 +38,6 @@ const handleKeyDown = event => {
     }
 
     fish.setAttribute('style', `
-        position: absolute;
-        bottom: 10vh;
         transform: translateX(var(--x)) translateY(var(--y)) rotateY(var(--backWards)) rotate(var(--upDown));
         transition: transform .5s ease-out;
         --x: ${x * fishSpeed}px;
