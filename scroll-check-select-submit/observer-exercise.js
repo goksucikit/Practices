@@ -34,7 +34,6 @@ select.addEventListener('change', event => {
     
     if (submit != '') {
         btn.disabled = false;
-        console.log(submit);
     };
 
 });
