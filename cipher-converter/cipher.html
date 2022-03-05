@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cypher Text Generator</title>
+  <link rel="stylesheet" href="../../base.css">
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      min-height: 100vh;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(90deg, #4ea2c8 0%, #0056fffb 100%);
+    }
+
+    .typer {
+      margin: 0 auto;
+      background: #e7bc2c;
+      width: 500px;
+      padding: 2rem;
+      padding: 2rem;
+      border-radius: 3px;
+      display: grid !important;
+    }
+
+    .header {
+        color: #000;
+    }
+
+    .button {
+        cursor: pointer;
+    }
+
+    textarea {
+      width: 26vw;
+      height: 100px;
+      resize: none;
+    }
+
+    .result {
+      width: 26vw;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="typer">
+    <h3 class="header">Type the message to be encrypted</h3>
+
+    
+    <textarea name="text" rows="4" cols="50" placeholder="AYSE SHOULD GO ON HOLIDAY"></textarea>
+    <p class="result" rows="4" cols="50"></p>
+    <input type="button" value="Send" class="button"></input>
+    
+  </div>
+
+  <script src="./cipher-app.js"></script>
+</body>
+
+</html>
