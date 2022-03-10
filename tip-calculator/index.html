@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link Tags -->
+    <link rel="stylesheet" href="./style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Quick Tip Calculator</title>
+</head>
+
+<body>
+    <!-- Container -->
+    <main class="container">
+        <header class="header">
+            <h1>Quick Tip Calculator</h2>
+        </header>
+
+        <!-- Tip Calculation Section -->
+        <section>
+            <div class="bill">
+                <label for="your-bill">Bill Amount</label>
+                <input type="number" placeholder="Enter Bill Amount" id="your-bill" class="bill-input">
+            </div>
+
+            <div class="tip">
+                <div class="tip-rate">
+                    <label for="tipInput">Tip Rate</label>
+                    <span id="tipPercent" class="tip-rate-value">0.00</span>
+                </div>
+
+                <div class="slider">
+                    <input type="range" min="0" max="100" step="1" value="0" id="tipInput" class=" range tip-range">
+                </div>
+            </div>
+
+            <div class="tip-value">
+                <div>
+                    <p>Tip</p>
+                </div>
+                <div id="tipValue" class="tip-amount">
+                    0.00
+                </div>
+            </div>
+
+
+            <div class="credit">
+                <label for="creditCard"><i class="fa-solid fa-credit-card"></i> VISA / MasterCard</label>
+                <span>
+                    <input type="checkbox" id="creditCard" class="card-checkbox">
+                </span>
+            </div>
+
+            <hr />
+
+            <div class="total">
+                <span>
+                    <p>Total</p>
+                </span>
+                <span id="totalWithTip" class="total-amount">0.00</span>
+            </div>
+            
+        </section>
+        <!-- Tip Calculation Section End-->
+
+        
+        <!-- Split & Each Section -->
+        <section>
+            <div>
+                <div class="person">
+                    <label for="splitInput">Split</label>
+                    <span id="splitValue" class="split-value">1</span>
+                </div>
+                <input type="range" min="1" max="15" value="1" id="splitInput" class="range split-range" />
+            </div>
+            
+            <div class="bill-each">
+                <div>
+                     <p>Bill Each</p>
+                </div>
+                <div class="billEach">0</div>
+            </div>
+            
+            <div class="tip-each">
+                <div>
+                    <p>Tip Each</p>
+                </div>
+                
+                <div class="tipEach">0</div>
+            </div>
+        </section>
+        <!-- Split & Each Section End-->
+        <!-- Discount Section -->
+        <section>
+            <div class="coupon">
+                <form class="code-apply">
+                    <input type="text" maxlength="7" placeholder="Coupon Code" id="coupon" class="coupon-code" autocomplete="off"/>
+                    
+                </form>
+            </div>
+        </section>
+        <!-- Discount Section End-->
+
+    </main>
+    <!-- Container End -->
+
+    <!-- JS File -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
