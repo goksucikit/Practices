@@ -40,8 +40,9 @@ The app tracks daily calories that users consumed and shows some datas related t
 >I used Parcel Bundler to store the list items in my local storage. The items could be restored from localStorage on page reloads.
 >![calorie-tracker-localStorage](https://user-images.githubusercontent.com/58112028/158066217-ac270b04-ee25-4177-b8e1-55b972d655de.png)
 
->You may glance through the video that shows how the application works briefly.
+
 
 ### Preview Video
+>You may glance through the video that shows how the application works briefly.
 >https://user-images.githubusercontent.com/58112028/158060770-31217ec3-6e1d-4168-a6e4-f3e4679fc4b7.mp4
 
