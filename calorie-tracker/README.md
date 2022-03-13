@@ -44,5 +44,11 @@ The app tracks daily calories that users consumed and shows some datas related t
 
 ### Preview Video
 >You may glance through the video that shows how the application works briefly.
->https://user-images.githubusercontent.com/58112028/158060770-31217ec3-6e1d-4168-a6e4-f3e4679fc4b7.mp4
+
+
+
+
+
+
+https://user-images.githubusercontent.com/58112028/158066487-82a9d455-0f1c-4ec7-b232-d7511f1ec581.mp4
 
