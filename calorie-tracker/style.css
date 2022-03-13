@@ -1,0 +1,305 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'MuseoModerno', cursive, sans-serif;   
+    font-size: 10px;
+}
+
+body {
+    background-color: #C1DEAE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.container {
+    background: #219F94;
+    min-width: 65vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avocado {
+    width: 70%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 3.5em;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+header h3 {
+    font-size: 2.4em;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.calorie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calorie-input {
+    padding: 0 3px;
+    width: 40vw;
+    height: 4rem;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.6rem;
+}
+
+.add-button {
+    margin-top: 1rem;
+    background-color: #C1DEAE;
+    width: 8rem;
+    height: 8rem;
+    border: 2px solid #000;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.add-button:after{
+    content: "ADD";
+}
+
+.add-button:hover:after{
+    content: "+";
+    font-size: 4rem;
+    font-weight: lighter;
+    transition: all 0.5s ease;
+}
+
+.add-button:hover {
+    background-color: #FFD32D;
+    transition: all 0.5s ease;
+    content: '+';
+}
+
+hr {
+    color: #fff;
+    width: 95%;
+}
+
+.data-container {
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.data-container header > h3 {
+    padding: 5px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.list {
+    min-width: 50vw;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.list-item {
+    margin: .7rem 4px;
+    padding: 1rem 1rem;
+    background-color: #C1DEAE;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.list-item:hover{
+    background-color: #FFD32D;
+    transition: all .5s ease;
+}
+
+.item-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.output-container {
+    width: 100%;
+}
+
+.output {
+    margin: 1rem;
+    padding: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dd9e7d;
+    border-radius: 3px;
+}
+
+.output > * {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color:#F2F5C8;
+}
+ 
+/* Reset Button */
+.output-reset {
+    position: absolute;
+    margin: 1rem;
+    padding: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F2F5C8;
+    border-radius: 3px;
+    cursor: default;
+    pointer-events: none;
+    opacity: 0;
+}
+
+ .output-reset-visible {
+    position: relative;
+    margin: 1rem;
+    padding: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F2F5C8;
+    border-radius: 3px;
+    cursor: pointer;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.reset-button {
+    justify-content: center;
+    border: none;
+    width: 97%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #dd9e7d;
+    background-color: #F2F5C8;
+    cursor: pointer;
+}
+
+/* Reset Button End */
+
+.progress {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.progress > h3, .progress h3 * {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.progress-circle-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.progress-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.progress-center {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-color: #219F94;
+}
+
+/* CSS Media Queries */
+@media only screen and (max-width: 748px) {
+    
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }   
+    
+    input[type="number"] {
+        width: 60vw;
+    }
+    
+    .calorie-input {
+        width: 50vw;
+    }
+
+}
+
+@media only screen and (max-width: 585px) {
+
+    input[type="number"] {
+        width: 70vw;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .calorie-input {
+        width: 50vw;
+    }
+    
+    .list {
+        display: block;
+        text-align: center;
+    }
+
+    .list-item {
+        margin: .5rem 3px;
+        padding: 1rem 1.5rem;
+        border: none;
+        width: 70vw;
+    }
+
+    .progress > h3, .progress h3 * {
+        margin: 1rem 0;
+        font-size: 1.6rem;
+    }
+}
